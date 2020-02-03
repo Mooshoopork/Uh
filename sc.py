@@ -1,0 +1,11 @@
+name = input("Name of Employee: ")
+print(" ")
+bp = input("Base Pay: ")
+print(" ")
+hw = input("Hours Worked: ")
+print(" ")
+tax = float(input("Enter tax presentage "))
+gs = float(bp) * float(hw)
+ns = gs * (tax/100)
+fs = gs - ns
+print("The take home pay for employee,", name, "is $", fs, ".")

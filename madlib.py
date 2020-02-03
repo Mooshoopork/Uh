@@ -1,0 +1,12 @@
+# Mad lib program
+print("This is a madlib. Fill in the words to make it.")
+name = input("Name: ")
+adj1 = input("First adjative: ")
+adj2 = input("Second adjative: ")
+adj3 = input("Third adjative: ")
+noun1 = input("First noun: ")
+noun2 = input("Second noun: ")
+prno1 = input("Upper case present tense pronoun: ")
+prno2 = input("Lower case present tense pronoun: ")
+print(name + " was a(n) " + adj1 + " " + noun1 + "." + " " + prno1 + " was " + "very " + adj2 + ".")
+print(name + " went to the " + adj3 + " " + noun2 + " and " + prno2 + " was happy.")

@@ -1,0 +1,8 @@
+print("I want to test my memory.")
+name = input("What is you're name? ")
+print("Ok")
+age = input("How old are you? ")
+print("Ok")
+sex = input("And are you a girl or a boy? ")
+print("Alright here's what I got!")
+print("You are " + name + " and you are a " + age + " year old " + sex + ".")
