@@ -1,0 +1,34 @@
+import re
+#normal to binary
+#255
+while True:
+    num = input("Enter a number less than 256: ")
+    try:
+        num = int(num)
+        if num <= 255:
+            break
+        else:
+            print("Enter numbers less than 256!")
+    except:
+        print("Enter only numbers!")
+count = 0
+bi = 0
+n=num
+two = 2
+ten = 10
+while True:
+    if n != 0:
+        n-=1
+        bi+=1
+#8/2=4/2=2/2=1
+        if re.search("[2,3,4,5,6,7,8,9]",str(bi)):
+            bi-=two
+            bi+=ten
+            if int((count+2)/2)==float((count+2)/2):
+                ten=ten*10
+            else:
+                ten=10
+    count+=1
+    if count == num:
+        break
+print(bi)
