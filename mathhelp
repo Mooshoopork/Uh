@@ -1,0 +1,13 @@
+import math
+firstsin=math.sin(math.radians(42))
+y=input("Input next sine: ")
+secondsin=math.sin(math.radians(48))
+parta=(12*firstsin)/secondsin
+partat=part**2
+lega=(partat+144)**.5
+partb=25-parta
+partbt=partb**2
+legb=(partbt+144)**.5
+s=(lega+legb+25)/2
+awn=(s*(s-lega)*(s-legb)*(s-25))**.5
+print(awn)
